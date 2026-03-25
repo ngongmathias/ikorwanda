@@ -1,220 +1,432 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="IkoRwanda – Discover, explore, and connect with Rwanda's vibrant local businesses, places, and experiences." />
-    <meta name="keywords" content="IkoRwanda, Rwanda, local businesses, directory, Kigali, explore Rwanda" />
-    <meta property="og:title" content="IkoRwanda – Explore Rwanda" />
-    <meta property="og:description" content="Discover Rwanda's best local businesses, places, and experiences." />
-    <meta property="og:type" content="website" />
-    <title>IkoRwanda – Explore Rwanda</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="/src/style.css" />
-  </head>
-  <body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IkoRwanda Ltd — Train. Deploy. Deliver.</title>
+  <meta name="description" content="IkoRwanda is Rwanda's integrated digital training and technology services company. We train talent, deploy them on real projects, and deliver world-class digital solutions to businesses.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-    <!-- ====== NAVBAR ====== -->
-    <nav class="navbar" id="navbar">
-      <div class="nav-inner">
-        <a href="#home" class="nav-logo">
-          <span class="logo-iko">Iko</span><span class="logo-rwanda">Rwanda</span>
+  <!-- ========== 1. NAVIGATION ========== -->
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <a href="#" class="nav-logo">
+        <img src="images/IKORWANDA logo.jpg" alt="IkoRwanda Logo">
+      </a>
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#work">Our Work</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#join">Join a Program</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="nav-cta">
+        <a href="#contact" class="btn btn-primary">Hire Us →</a>
+      </div>
+      <button class="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="mobile-menu">
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#work">Our Work</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#join">Join a Program</a>
+      <a href="#contact">Contact</a>
+      <a href="#contact">Hire Us</a>
+    </div>
+  </nav>
+
+  <!-- ========== 2. HERO ========== -->
+  <section class="hero" id="hero">
+    <div class="hero-content">
+      <div class="hero-pill">🌍 Rwanda's Digital Engine</div>
+      <h1>Where African Talent Meets Digital Opportunity</h1>
+      <p class="hero-sub">IkoRwanda builds the next generation of African digital professionals and deploys them to deliver world-class technology solutions for businesses.</p>
+      <div class="hero-buttons">
+        <a href="#contact" class="btn btn-primary">Hire Us →</a>
+        <a href="#join" class="btn btn-secondary">Join a Program →</a>
+      </div>
+      <div class="hero-stats">
+        <span class="hero-stat-pill">10+ Companies Served</span>
+        <span class="hero-stat-pill">4+ Training Programs</span>
+        <span class="hero-stat-pill">Rwanda-Registered</span>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"></polyline></svg>
+    </div>
+  </section>
+
+  <!-- ========== 3. THE SYSTEM ========== -->
+  <section class="system-section" id="system">
+    <div class="container">
+      <div class="section-header reveal">
+        <h2>One System. Three Outcomes.</h2>
+        <p>IkoRwanda is not a school, a staffing agency, or a software house. It is all three — operating as one integrated, self-reinforcing system.</p>
+      </div>
+      <div class="steps-grid">
+        <div class="step-card reveal">
+          <div class="step-number">Step 01</div>
+          <div class="step-icon blue">🎓</div>
+          <h3>We Train</h3>
+          <p>Practical, applied digital skills training in AI, software development, cybersecurity, and automation. No simulations. Real tools. Real outputs from day one.</p>
+        </div>
+        <div class="step-card reveal">
+          <div class="step-number">Step 02</div>
+          <div class="step-icon green">🚀</div>
+          <h3>We Deploy</h3>
+          <p>Trained talent is integrated directly into live client projects. Learners become earners. Clients get reliable, capable hands. The gap between education and employment disappears.</p>
+        </div>
+        <div class="step-card reveal">
+          <div class="step-number">Step 03</div>
+          <div class="step-icon gold">🌍</div>
+          <h3>We Deliver</h3>
+          <p>Real products. Real revenue. Real impact. Every completed project funds the next cycle of training, expanding our capacity and proving our model at scale.</p>
+        </div>
+      </div>
+      <div class="flow-diagram reveal">
+        <span class="flow-item blue">Capability</span>
+        <span class="flow-arrow">→</span>
+        <span class="flow-item green">Deployment</span>
+        <span class="flow-arrow">→</span>
+        <span class="flow-item gold">Income</span>
+        <span class="flow-arrow">→</span>
+        <span class="flow-item navy">Reinvestment</span>
+        <span class="flow-arrow">→</span>
+        <span class="flow-item blue">Expanded Capability</span>
+        <span class="flow-arrow">⟳</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== 4. SERVICES ========== -->
+  <section class="services-section" id="services">
+    <div class="container">
+      <div class="section-header reveal">
+        <h2>What We Do</h2>
+        <p>From training individuals to transforming enterprises — IkoRwanda delivers across the full digital stack.</p>
+      </div>
+      <div class="services-grid">
+        <div class="service-card reveal">
+          <div class="service-icon">🧠</div>
+          <h3>AI &amp; Digital Skills Training</h3>
+          <p>Structured training programs in AI tools, software development, digital automation, and cybersecurity. Designed for individuals ready to enter the workforce and corporate teams ready to level up. Delivered on-site or remotely.</p>
+          <a href="#contact" class="learn-more">Learn more →</a>
+        </div>
+        <div class="service-card green-border reveal">
+          <div class="service-icon">💻</div>
+          <h3>Web &amp; Application Development</h3>
+          <p>End-to-end development of professional websites, web applications, and digital platforms. From concept to deployment, IkoRwanda handles the complete build — clean, fast, and built to last.</p>
+          <a href="#contact" class="learn-more">Learn more →</a>
+        </div>
+        <div class="service-card reveal">
+          <div class="service-icon">🏢</div>
+          <h3>Enterprise Digital Transformation</h3>
+          <p>We help organizations modernize their systems, adopt digital workflows, and build lasting internal capability. We do not just install tools — we make sure your team knows how to use them.</p>
+          <a href="#contact" class="learn-more">Learn more →</a>
+        </div>
+        <div class="service-card green-border reveal">
+          <div class="service-icon">⚡</div>
+          <h3>AI Integration Services</h3>
+          <p>Ready to put AI to work in your business? IkoRwanda designs and implements AI-powered workflows, automation systems, and intelligent tools directly into your existing operations.</p>
+          <a href="#contact" class="learn-more">Learn more →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== 5. IMPACT NUMBERS ========== -->
+  <section class="impact-section" id="impact">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-item reveal">
+          <div class="stat-number blue" data-count="10" data-suffix="+">0</div>
+          <div class="stat-label">Companies Served</div>
+        </div>
+        <div class="stat-item reveal">
+          <div class="stat-number gold" data-count="4" data-suffix="+">0</div>
+          <div class="stat-label">Programs Delivered</div>
+        </div>
+        <div class="stat-item reveal">
+          <div class="stat-number blue" data-count="50" data-suffix="+">0</div>
+          <div class="stat-label">Professionals Trained</div>
+        </div>
+        <div class="stat-item reveal">
+          <div class="stat-number gold" data-count="100" data-suffix="%">0</div>
+          <div class="stat-label">Rwanda-Registered &amp; Legal</div>
+        </div>
+      </div>
+      <div class="impact-quote reveal">
+        <blockquote>"We do not wait for opportunity to arrive in Africa. We build the infrastructure that creates it."</blockquote>
+        <cite>— Mathias Ngong, Founder</cite>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== 6. OUR WORK / PORTFOLIO ========== -->
+  <section class="portfolio-section" id="work">
+    <div class="container">
+      <div class="section-header reveal">
+        <h2>Work We've Delivered</h2>
+        <p>Real clients. Real projects. Real results.</p>
+      </div>
+      <div class="portfolio-grid">
+        <div class="portfolio-card grad-1 reveal">
+          <span class="card-url">baraafrika.com</span>
+          <h3>BaraAfrika</h3>
+          <p class="card-brief">Digital platform — web services</p>
+          <a href="https://baraafrika.com" target="_blank" rel="noopener" class="btn-view">View Site →</a>
+        </div>
+        <div class="portfolio-card grad-2 reveal">
+          <span class="card-url">vaulta-ten.vercel.app</span>
+          <h3>Vaulta</h3>
+          <p class="card-brief">Web platform development</p>
+          <a href="https://vaulta-ten.vercel.app/contact" target="_blank" rel="noopener" class="btn-view">View Site →</a>
+        </div>
+        <div class="portfolio-card grad-3 reveal">
+          <span class="card-url">ekamiauto.com</span>
+          <h3>Ekamiauto</h3>
+          <p class="card-brief">Business website</p>
+          <a href="https://ekamiauto.com" target="_blank" rel="noopener" class="btn-view">View Site →</a>
+        </div>
+        <div class="portfolio-card grad-4 reveal">
+          <span class="card-url">exci-maa.com</span>
+          <h3>Exci-Maa</h3>
+          <p class="card-brief">Corporate AI &amp; cybersecurity training — on-site program delivery</p>
+          <a href="http://exci-maa.com" target="_blank" rel="noopener" class="btn-view">View Site →</a>
+        </div>
+      </div>
+      <div class="client-story reveal">
+        <img src="images/rr.jpg" alt="Mathias Ngong presenting AI and cybersecurity training at Exci-Maa in Kigali">
+        <div class="client-story-overlay">
+          <div class="client-story-text">
+            <h3>Training Delivered on the Ground</h3>
+            <p>We delivered AI &amp; cybersecurity training directly to the Exci-Maa team in Kigali. Sessions included "Leveraging AI for Enhanced Cybersecurity: Strategies and Tools" — led by Mathias Ngong.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== 7. GALLERY ========== -->
+  <section class="gallery-section" id="gallery">
+    <div class="container">
+      <div class="section-header reveal">
+        <h2>IkoRwanda in Action</h2>
+        <p>From training rooms to product launches — a glimpse into how we work.</p>
+      </div>
+      <div class="gallery-grid">
+        <div class="gallery-item span-2 reveal">
+          <img src="images/saff.png" alt="Large IkoRwanda training session with over 50 students">
+        </div>
+        <div class="gallery-item reveal">
+          <img src="images/take.png" alt="IkoRwanda professional team photo">
+        </div>
+        <div class="gallery-item reveal">
+          <img src="images/ikko.png" alt="IkoRwanda team working at laptops">
+        </div>
+        <div class="gallery-item reveal">
+          <img src="images/see.png" alt="Individual working intently on a laptop">
+        </div>
+        <div class="gallery-item reveal">
+          <img src="images/qq.jpg" alt="Mathias Ngong presenting at Exci-Maa training">
+        </div>
+        <div class="gallery-item reveal">
+          <img src="images/rr.jpg" alt="Mathias presenting Leveraging AI for Enhanced Cybersecurity">
+        </div>
+        <div class="gallery-item reveal">
+          <img src="images/53977394234_efb38909b0_o.jpg" alt="IkoRwanda event photo">
+        </div>
+        <div class="gallery-item reveal">
+          <img src="images/incase54.jpg" alt="IkoRwanda team photo">
+        </div>
+        <div class="gallery-item reveal">
+          <img src="images/IkoRwanda on AI ETHICS(Flyer).png" alt="IkoRwanda AI Ethics Workshop Flyer">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== 8. ABOUT ========== -->
+  <section class="about-section" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <div class="label about-label">Our Story</div>
+          <h2>Built From Observation. Designed for Africa.</h2>
+          <p>IkoRwanda was founded by Mathias Ngong after years spent at the intersection of advanced software engineering environments, academic ecosystems, and African market realities. The pattern was impossible to ignore: brilliant people with real skills, unable to find work that matched them. Companies wanting to go digital, unable to find partners they could trust. Technology arriving in Africa faster than the systems needed to absorb it.</p>
+          <p>IkoRwanda is the answer to that pattern. Not a temporary fix — a systemic one. By integrating training, work deployment, and enterprise service delivery into one continuous loop, IkoRwanda eliminates the friction between learning and earning, between talent and opportunity, between ambition and outcome.</p>
+          <p>We are registered and operating in Rwanda. We are building for Africa. And we are just getting started.</p>
+          <div class="about-badges">
+            <span class="about-badge blue">🇷🇼 Founded in Rwanda</span>
+            <span class="about-badge green">✓ RDB Registered</span>
+          </div>
+        </div>
+        <div class="about-image reveal">
+          <img src="images/take.png" alt="IkoRwanda full team photo — branded white and navy shirts">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== 9. JOIN A PROGRAM ========== -->
+  <section class="join-section" id="join">
+    <div class="container">
+      <div class="join-content reveal">
+        <h2>Ready to Go From Learning to Earning?</h2>
+        <p>IkoRwanda's training programs are not about certificates on a wall. They are about real skills, real projects, and real income. If you are ready to build a career in Africa's digital economy — this is where you start.</p>
+        <div class="join-columns">
+          <ul class="join-list">
+            <li>Practical AI and tech skills training</li>
+            <li>Work on live, paid client projects</li>
+            <li>Earn while you learn</li>
+          </ul>
+          <ul class="join-list">
+            <li>Build a real professional portfolio</li>
+            <li>Join a network of deployed digital talent</li>
+            <li>Kigali-based, expanding across Africa</li>
+          </ul>
+        </div>
+        <a href="#contact" class="btn btn-green">Apply to a Program →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== 10. CONTACT ========== -->
+  <section class="contact-section" id="contact">
+    <div class="container">
+      <div class="section-header reveal">
+        <h2>Let's Build Something Together</h2>
+        <p>Whether you need a website, a trained team, or an AI strategy — start here.</p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-form-card reveal">
+          <form id="contactForm" novalidate>
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" placeholder="Your full name" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="you@example.com" required>
+            </div>
+            <div class="form-group">
+              <label for="company">Company / Organization</label>
+              <input type="text" id="company" name="company" placeholder="Your company name">
+            </div>
+            <div class="form-group">
+              <label for="type">I am a...</label>
+              <select id="type" name="type">
+                <option value="" disabled selected>Select an option</option>
+                <option value="business">Business looking for services</option>
+                <option value="individual">Individual looking to join a program</option>
+                <option value="investor">Investor or partner</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="4" placeholder="Tell us what you need..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary form-submit">Send Message →</button>
+          </form>
+        </div>
+        <div class="contact-info reveal">
+          <div class="contact-logo">
+            <img src="images/IKORWANDA logo.jpg" alt="IkoRwanda Logo">
+          </div>
+          <div class="contact-detail">
+            <div class="contact-icon">📧</div>
+            <div>
+              <h4>Email</h4>
+              <a href="mailto:mathiasngong@ikorwanda.org.rw">mathiasngong@ikorwanda.org.rw</a>
+            </div>
+          </div>
+          <div class="contact-detail">
+            <div class="contact-icon">📞</div>
+            <div>
+              <h4>Phone</h4>
+              <a href="tel:+250785568519">+250 785 568519</a>
+            </div>
+          </div>
+          <div class="contact-detail">
+            <div class="contact-icon">🌐</div>
+            <div>
+              <h4>Website</h4>
+              <p>www.ikorwanda.org.rw</p>
+            </div>
+          </div>
+          <div class="contact-detail">
+            <div class="contact-icon">📍</div>
+            <div>
+              <h4>Location</h4>
+              <p>Kigali, Rwanda</p>
+            </div>
+          </div>
+          <p class="contact-note">We typically respond within 24 hours.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== 11. FOOTER ========== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <a href="#" class="footer-logo">
+          <img src="images/IKORWANDA logo.jpg" alt="IkoRwanda Logo">
         </a>
-        <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
-          <span></span><span></span><span></span>
-        </button>
-        <ul class="nav-links" id="navLinks">
-          <li><a href="#about" class="nav-link">About</a></li>
-          <li><a href="#mission" class="nav-link">Mission</a></li>
-          <li><a href="#team" class="nav-link">Our Team</a></li>
-          <li><a href="#contact" class="nav-link">Contact</a></li>
-          <li><a href="#contact" class="nav-cta">Get in Touch</a></li>
-        </ul>
-      </div>
-    </nav>
-
-    <!-- ====== HERO ====== -->
-    <section class="hero" id="home">
-      <div class="hero-bg">
-        <img src="/assets/team.jpg" alt="IkoRwanda Team" class="hero-img" />
-        <div class="hero-overlay"></div>
-      </div>
-      <div class="hero-content reveal">
-        <div class="hero-badge">🇷🇼 Made in Rwanda</div>
-        <h1 class="hero-title">
-          Discover the <span class="gradient-text">Best of Rwanda</span>
-        </h1>
-        <p class="hero-subtitle">
-          IkoRwanda connects you with Rwanda's vibrant local businesses,
-          hidden gems, and unforgettable experiences — all in one place.
-        </p>
-        <div class="hero-actions">
-          <a href="#about" class="btn-primary">Learn More</a>
-          <a href="#contact" class="btn-ghost">Get in Touch</a>
+        <div class="footer-nav">
+          <a href="#about">About</a>
+          <a href="#services">Services</a>
+          <a href="#work">Our Work</a>
+          <a href="#gallery">Gallery</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <div class="footer-socials">
+          <a href="#" aria-label="LinkedIn">in</a>
+          <a href="#" aria-label="Twitter">𝕏</a>
+          <a href="#" aria-label="Instagram">ig</a>
         </div>
       </div>
-      <div class="hero-scroll-hint">
-        <span>Scroll Down</span>
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
-      </div>
-    </section>
-
-    <!-- ====== ABOUT ====== -->
-    <section class="section about" id="about">
-      <div class="container">
-        <div class="section-tag reveal">Who We Are</div>
-        <h2 class="section-title reveal">Rwanda's Premier <span class="gradient-text">Local Discovery</span> Platform</h2>
-        <div class="about-grid">
-          <div class="about-text reveal">
-            <p>
-              IkoRwanda is a comprehensive platform built to spotlight the richness of Rwanda's local ecosystem. Whether you're a visitor looking for authentic experiences or a resident seeking trusted local services, IkoRwanda is your guide.
-            </p>
-            <p>
-              We bridge the gap between Rwanda's thriving local businesses and the people who need them most — making discovery simple, fast, and meaningful.
-            </p>
-            <div class="about-stats">
-              <div class="stat">
-                <span class="stat-num">500+</span>
-                <span class="stat-label">Businesses Listed</span>
-              </div>
-              <div class="stat">
-                <span class="stat-num">30+</span>
-                <span class="stat-label">Districts Covered</span>
-              </div>
-              <div class="stat">
-                <span class="stat-num">10K+</span>
-                <span class="stat-label">Monthly Users</span>
-              </div>
-            </div>
-          </div>
-          <div class="about-visual reveal">
-            <div class="visual-card vc1">
-              <div class="vc-icon">🏪</div>
-              <div>Local Businesses</div>
-            </div>
-            <div class="visual-card vc2">
-              <div class="vc-icon">🗺️</div>
-              <div>Explore Places</div>
-            </div>
-            <div class="visual-card vc3">
-              <div class="vc-icon">🤝</div>
-              <div>Community First</div>
-            </div>
-            <div class="visual-card vc4">
-              <div class="vc-icon">⭐</div>
-              <div>Verified Reviews</div>
-            </div>
-          </div>
+      <div class="footer-columns">
+        <div class="footer-col">
+          <h4>IkoRwanda Ltd</h4>
+          <p>Building Africa's digital workforce, one deployment at a time. We train talent, deploy them on real projects, and deliver world-class digital solutions to businesses across Rwanda and beyond.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#work">Our Work</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="mailto:mathiasngong@ikorwanda.org.rw">mathiasngong@ikorwanda.org.rw</a></li>
+            <li><a href="tel:+250785568519">+250 785 568519</a></li>
+            <li>Kigali, Rwanda</li>
+          </ul>
         </div>
       </div>
-    </section>
-
-    <!-- ====== MISSION ====== -->
-    <section class="section mission" id="mission">
-      <div class="container">
-        <div class="section-tag reveal">Our Mission</div>
-        <h2 class="section-title reveal">Building Rwanda, <span class="gradient-text">One Connection</span> at a Time</h2>
-        <p class="section-sub reveal">
-          We're on a mission to empower local Rwandan businesses, enrich community life, and showcase Rwanda to the world.
-        </p>
-        <div class="mission-grid">
-          <div class="mission-card reveal">
-            <div class="mission-icon">🚀</div>
-            <h3>Empower Businesses</h3>
-            <p>Give local entrepreneurs a powerful digital presence so they can reach more customers and grow sustainably.</p>
-          </div>
-          <div class="mission-card reveal">
-            <div class="mission-icon">🌍</div>
-            <h3>Promote Rwanda</h3>
-            <p>Showcase Rwanda's incredible culture, tourism, food, and services to a global audience.</p>
-          </div>
-          <div class="mission-card reveal">
-            <div class="mission-icon">💡</div>
-            <h3>Drive Innovation</h3>
-            <p>Build technology solutions that solve real problems for Rwandans and inspire a new generation of builders.</p>
-          </div>
-          <div class="mission-card reveal">
-            <div class="mission-icon">🤝</div>
-            <h3>Strengthen Community</h3>
-            <p>Foster trust and collaboration between businesses and customers through transparent, community-driven reviews.</p>
-          </div>
-          <div class="mission-card reveal">
-            <div class="mission-icon">📱</div>
-            <h3>Accessible to All</h3>
-            <p>Design simple, mobile-friendly tools that work for every Rwandan, regardless of technical background.</p>
-          </div>
-          <div class="mission-card reveal">
-            <div class="mission-icon">🌱</div>
-            <h3>Sustainable Growth</h3>
-            <p>Support long-term economic development by connecting supply and demand across Rwanda's districts.</p>
-          </div>
-        </div>
+      <div class="footer-bottom">
+        &copy; 2024 IkoRwanda Ltd. All rights reserved. Registered in Rwanda under the Rwanda Development Board.
       </div>
-    </section>
+    </div>
+  </footer>
 
-    <!-- ====== TEAM ====== -->
-    <section class="section team" id="team">
-      <div class="container">
-        <div class="section-tag reveal">Our Team</div>
-        <h2 class="section-title reveal">The People Behind <span class="gradient-text">IkoRwanda</span></h2>
-        <p class="section-sub reveal">
-          A passionate group of young Rwandan innovators, designers, and engineers building the future of local discovery.
-        </p>
-        <div class="team-photo-wrap reveal">
-          <img src="/assets/team.jpg" alt="The IkoRwanda Team" class="team-photo" />
-          <div class="team-photo-caption">The IkoRwanda team — united by a shared vision to connect Rwanda.</div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ====== CONTACT ====== -->
-    <section class="section contact" id="contact">
-      <div class="container">
-        <div class="contact-card reveal">
-          <div class="section-tag" style="margin-bottom:1rem;">Get in Touch</div>
-          <h2 class="section-title" style="font-size:2rem;">Ready to <span class="gradient-text">Connect?</span></h2>
-          <p class="section-sub" style="margin-bottom:2rem;">
-            Whether you want to list your business or learn more about IkoRwanda, we'd love to hear from you.
-          </p>
-          <div class="contact-links">
-            <a href="mailto:info@ikorwanda.org.rw" class="contact-link" id="email-link">
-              <span class="contact-icon">✉️</span>
-              <span>info@ikorwanda.org.rw</span>
-            </a>
-            <a href="https://ikorwanda.org.rw" target="_blank" rel="noopener" class="contact-link" id="website-link">
-              <span class="contact-icon">🌐</span>
-              <span>ikorwanda.org.rw</span>
-            </a>
-          </div>
-          <a href="mailto:info@ikorwanda.org.rw" class="btn-primary" style="margin-top:2rem;" id="contact-btn">Send Us a Message</a>
-        </div>
-      </div>
-    </section>
-
-    <!-- ====== FOOTER ====== -->
-    <footer class="footer">
-      <div class="container">
-        <div class="footer-inner">
-          <div class="footer-brand">
-            <span class="logo-iko">Iko</span><span class="logo-rwanda">Rwanda</span>
-            <p>Discover the best of Rwanda.</p>
-          </div>
-          <div class="footer-links">
-            <a href="#about">About</a>
-            <a href="#mission">Mission</a>
-            <a href="#team">Team</a>
-            <a href="#contact">Contact</a>
-          </div>
-        </div>
-        <div class="footer-bottom">
-          <p>&copy; 2026 IkoRwanda. All rights reserved. 🇷🇼</p>
-        </div>
-      </div>
-    </footer>
-
-    <script type="module" src="/src/main.js"></script>
-  </body>
+  <script src="script.js"></script>
+</body>
 </html>
