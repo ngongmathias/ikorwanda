@@ -168,4 +168,59 @@ document.addEventListener('DOMContentLoaded', () => {
     input.parentNode.appendChild(error);
   }
 
+  // --- 7. Gallery lightbox ---
+  const lightbox = document.getElementById('lightbox');
+  const lightboxImg = lightbox ? lightbox.querySelector('.lightbox-img') : null;
+  const lightboxCaption = lightbox ? lightbox.querySelector('.lightbox-caption') : null;
+  const galleryItems = document.querySelectorAll('.gallery-item');
+  let currentIndex = 0;
+
+  if (lightbox && galleryItems.length) {
+    const images = Array.from(galleryItems).map(item => ({
+      src: item.querySelector('img').src,
+      alt: item.querySelector('img').alt,
+      caption: item.querySelector('.gallery-caption')?.textContent || ''
+    }));
+
+    galleryItems.forEach((item, i) => {
+      item.addEventListener('click', () => {
+        currentIndex = i;
+        showLightbox(currentIndex);
+      });
+    });
+
+    lightbox.querySelector('.lightbox-close').addEventListener('click', closeLightbox);
+    lightbox.querySelector('.lightbox-prev').addEventListener('click', () => navigate(-1));
+    lightbox.querySelector('.lightbox-next').addEventListener('click', () => navigate(1));
+
+    lightbox.addEventListener('click', (e) => {
+      if (e.target === lightbox) closeLightbox();
+    });
+
+    document.addEventListener('keydown', (e) => {
+      if (!lightbox.classList.contains('active')) return;
+      if (e.key === 'Escape') closeLightbox();
+      if (e.key === 'ArrowLeft') navigate(-1);
+      if (e.key === 'ArrowRight') navigate(1);
+    });
+
+    function showLightbox(index) {
+      lightboxImg.src = images[index].src;
+      lightboxImg.alt = images[index].alt;
+      lightboxCaption.textContent = images[index].caption;
+      lightbox.classList.add('active');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeLightbox() {
+      lightbox.classList.remove('active');
+      document.body.style.overflow = '';
+    }
+
+    function navigate(dir) {
+      currentIndex = (currentIndex + dir + images.length) % images.length;
+      showLightbox(currentIndex);
+    }
+  }
+
 });
